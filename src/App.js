@@ -1,45 +1,45 @@
 import { useState } from 'react';
 import Banner from './componentes/Banner';
-import Formulario from './componentes/Formulario';
+import Form from './componentes/Form';
 import Time from './componentes/Time';
 
 function App() {
 
   const times = [
     {
-      nome: 'Programação',
-      corPrimaria: '#57C278',
-      corSecundaria: '#D9F7E9'
+      name: 'Programação',
+      primaryColor: '#57C278',
+      secondaryColor: '#D9F7E9'
     },
     {
-      nome: 'Front-End',
-      corPrimaria: '#82CFFA',
-      corSecundaria: '#E8F8FF'
+      name: 'Front-End',
+      primaryColor: '#82CFFA',
+      secondaryColor: '#E8F8FF'
     },
     {
-      nome: 'Data Science',
-      corPrimaria: '#A6D157',
-      corSecundaria: '#F0F8E2'
+      name: 'Data Science',
+      primaryColor: '#A6D157',
+      secondaryColor: '#F0F8E2'
     },
     {
-      nome: 'Devops',
-      corPrimaria: '#E06B69',
-      corSecundaria: '#FDE7E8'
+      name: 'Devops',
+      primaryColor: '#E06B69',
+      secondaryColor: '#FDE7E8'
     },
     {
-      nome: 'UX e Design',
-      corPrimaria: '#DB6EBF',
-      corSecundaria: '#FAE9F5'
+      name: 'UX e Design',
+      primaryColor: '#DB6EBF',
+      secondaryColor: '#FAE9F5'
     },
     {
-      nome: 'Mobile',
-      corPrimaria: '#FFBA05',
-      corSecundaria: '#FFF5D9'
+      name: 'Mobile',
+      primaryColor: '#FFBA05',
+      secondaryColor: '#FFF5D9'
     },
     {
-      nome: 'Inovação e Gestão',
-      corPrimaria: '#FF8A29',
-      corSecundaria: '#FFEEDF'
+      name: 'Inovação e Gestão',
+      primaryColor: '#FF8A29',
+      secondaryColor: '#FFEEDF'
     }
   ]
 
@@ -58,14 +58,14 @@ function App() {
       altText="Banner Image"
       />
 
-      <Formulario times={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)}/>
+      <Form times={times.map(time => time.name)} registeredCollaborator={colaborador => aoNovoColaboradorAdicionado(colaborador)}/>
 
       {times.map(time => <Time 
-        key={time.nome} 
-        nome={time.nome} 
-        corPrimaria={time.corPrimaria} 
-        corSecundaria={time.corSecundaria} 
-        colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
+        key={time.name} 
+        name={time.name} 
+        primaryColor={time.primaryColor} 
+        secondaryColor={time.secondaryColor} 
+        collaborators={colaboradores.filter(colaborador => colaborador.time === time.name)}
       />)}   
 
     </div>

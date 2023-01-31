@@ -8,8 +8,8 @@ interface BannerProps{
 
 function Banner({srcImage, altText}:BannerProps){
     return(
-        <header className={styles.Banner}>
-            
+        <header className={styles.banner}>
+
             <img src={srcImage} alt={altText} />
          
         </header>

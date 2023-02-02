@@ -27,7 +27,7 @@ const Time = ({collaborators,primaryColor,secondaryColor,name}:TimeProps) => {
                  image={collaborator.image}/> )}
             </div>
         </section> 
-        : ''
+        :<></> //retornamos um fragment para uniformizar os retornos
     )
 }
 

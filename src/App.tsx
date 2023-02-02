@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Banner from './componentes/Banner';
 import Form from './componentes/Form';
 import Time from './componentes/Time';
+import { ICollaborators } from './shared/interfaces/ICollaborators';
 
 function App() {
 
@@ -43,11 +44,11 @@ function App() {
     }
   ]
 
-  const [colaboradores, setColaboradores] = useState([])
+  const [collaborators, setCollaborators] = useState([])
 
-  const aoNovoColaboradorAdicionado = (colaborador) => {
+  const newCollaboratorAdd = (colaborator: ICollaborators) => {
     debugger
-    setColaboradores([...colaboradores, colaborador])
+    //setCollaborators([...collaborators, collaborator])
   }
 
   return (
@@ -58,14 +59,14 @@ function App() {
       altText="Banner Image"
       />
 
-      <Form times={times.map(time => time.name)} registeredCollaborator={colaborador => aoNovoColaboradorAdicionado(colaborador)}/>
+      <Form times={times.map(time => time.name)} registeredCollaborator={colaborador => newCollaboratorAdd(colaborador)}/>
 
       {times.map(time => <Time 
         key={time.name} 
         name={time.name} 
         primaryColor={time.primaryColor} 
         secondaryColor={time.secondaryColor} 
-        collaborators={colaboradores.filter(colaborador => colaborador.time === time.name)}
+        collaborators={collaborators.filter(collaborator => collaborator.time === time.name)}
       />)}   
 
     </div>

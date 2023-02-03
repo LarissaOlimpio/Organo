@@ -44,11 +44,11 @@ function App() {
     }
   ]
 
-  const [collaborators, setCollaborators] = useState([])
+  const [collaborators, setCollaborators] = useState<ICollaborators[]>([])
 
-  const newCollaboratorAdd = (colaborator: ICollaborators) => {
+  const newCollaboratorAdd = (collaborator: ICollaborators) => {
     debugger
-    //setCollaborators([...collaborators, collaborator])
+    setCollaborators([...collaborators, collaborator])
   }
 
   return (
@@ -59,7 +59,7 @@ function App() {
       altText="Banner Image"
       />
 
-      <Form times={times.map(time => time.name)} registeredCollaborator={colaborador => newCollaboratorAdd(colaborador)}/>
+      <Form times={times.map(time => time.name)} registeredCollaborator={collaborator => newCollaboratorAdd(collaborator)}/>
 
       {times.map(time => <Time 
         key={time.name} 

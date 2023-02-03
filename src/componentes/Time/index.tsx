@@ -1,4 +1,4 @@
-import { ICollaborators } from '../../shared/interfaces/ICollaborators'
+import { ICollaborators } from 'shared/interfaces/ICollaborators'
 import Collaborator from '../Collaborator'
 import styles from './Time.module.css'
 

@@ -3,7 +3,7 @@ import Button from "../Button";
 import TextField from "../TextField";
 import DropdownList from "../DropdownList";
 import styles from "./Form.module.css";
-import { ICollaborators } from "../../shared/interfaces/ICollaborators";
+import { ICollaborators } from "shared/interfaces/ICollaborators";
 
 interface FormProps{
   registeredCollaborator: (colaborator :ICollaborators) => void

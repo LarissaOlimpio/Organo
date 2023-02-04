@@ -7,7 +7,9 @@
 | :label: Tecnologias | React, TypeScript, Html5, CSS3 (tecnologias utilizadas)
 | :rocket: URL         |https://organo-beta-rust.vercel.app/
 
-![Cinetag](#vitrinedev)
+![organo](https://user-images.githubusercontent.com/50180854/216784067-ee549166-9ebd-45fb-aa9a-2afa74512ac7.png#vitrinedev)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

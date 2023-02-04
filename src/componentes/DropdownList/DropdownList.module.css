@@ -5,11 +5,12 @@
 }
 
 .dropdownList select {
-    background-color: #FFF;
+    background-color: var(--write);
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
     width: 100%;
     border: none;
     font-size: 24px;
     padding: 24px;
     box-sizing: border-box;
+   
 }

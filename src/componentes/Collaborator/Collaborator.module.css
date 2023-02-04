@@ -3,7 +3,6 @@
 }
 
 .collaborator .header {
-    background-color:  #F0F0F0;
     border-radius: 10px 10px 0px 0px;
 }
 .collaborator img {
@@ -14,7 +13,7 @@
 }
 
 .collaborator .footer {
-    background: #FFFFFF;
+    background: var(--write);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
     border-radius: 0px 0px 10px 10px;
     padding-top: 90px;
@@ -22,7 +21,7 @@
 }
 
 .collaborator .footer h4 {
-    color: #6278F7;
+    color: var(--lilac);
     font-size: 18px;
     line-height: 22px;
     font-weight: bold;
@@ -32,6 +31,6 @@
 .collaborator .footer h5 {
     font-size: 18px;
     line-height: 22px;
-    color: #212121;
+    color: var(--lightBlack);
     padding: 0 16px;
 }

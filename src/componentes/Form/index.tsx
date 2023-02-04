@@ -39,7 +39,7 @@ const Formulario = ({registeredCollaborator,times}:FormProps) => {
   return (
     <section className={styles.form}>
       <form onSubmit={toSave}>
-        <h2>Preencha os dados para criar o card do colaborador</h2>
+        <h2>Preencha os dados abaixo para criar o card do colaborador</h2>
         <TextField
           required={true}
           label="Nome"
@@ -60,7 +60,7 @@ const Formulario = ({registeredCollaborator,times}:FormProps) => {
           value={image}
           modify={(value) => setImage(value)}
         />
-        <TextField
+        <TextField 
           label="Data de entrada no time"
           placeholder=""
           value={date}

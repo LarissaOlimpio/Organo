@@ -19,12 +19,15 @@ const Time = ({collaborators,primaryColor,secondaryColor,name}:TimeProps) => {
             </h3>
 
             <div className={styles.collaborators}>
+
                 {collaborators.map( collaborator => <Collaborator 
                 backgroundColor={primaryColor}
                  key={collaborator.name} 
                  name={collaborator.name} 
                  position={collaborator.position} 
-                 image={collaborator.image}/> )}
+                 image={collaborator.image}
+                 date={collaborator.date}/> )}
+
             </div>
         </section> 
         :<></> //retornamos um fragment para uniformizar os retornos

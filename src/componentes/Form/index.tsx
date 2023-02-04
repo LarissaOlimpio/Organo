@@ -16,6 +16,7 @@ const Formulario = ({registeredCollaborator,times}:FormProps) => {
   const [position, setPosition] = useState("");
   const [image, setImage] = useState("");
   const [time, setTime] = useState("");
+  const [date, setDate] = useState("");
 
   const toSave = (event:React.FormEvent<HTMLFormElement>) => {
 
@@ -25,12 +26,14 @@ const Formulario = ({registeredCollaborator,times}:FormProps) => {
       position,
       image,
       time,
+      date
     });
 
     setName("");
     setPosition("");
     setImage("");
     setTime("");
+    setDate("")
   };
 
   return (
@@ -57,6 +60,14 @@ const Formulario = ({registeredCollaborator,times}:FormProps) => {
           value={image}
           modify={(value) => setImage(value)}
         />
+        <TextField
+          label="Data de entrada no time"
+          placeholder=""
+          value={date}
+          modify={(value) => setDate(value)}
+          type="date"
+          />
+
         <DropdownList
           required={true}
           label="Time"

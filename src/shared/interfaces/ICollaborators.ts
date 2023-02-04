@@ -3,4 +3,5 @@ export interface ICollaborators{
     position:string
     image: string //string pois será passado URL
     time?:string
+    date:string
 }

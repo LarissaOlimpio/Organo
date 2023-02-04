@@ -7,9 +7,10 @@ interface TextFieldProps{
     label: string
     value: string
     required?: boolean
+    type?: 'text'|'password'|'date'|'email'|'number'
 
 }
-const TextField = ({label,modify,placeholder,value,required = false}:TextFieldProps) => { 
+const TextField = ({label,modify,placeholder,value,required = false, type = 'text'}:TextFieldProps) => { 
 
     const typing = (event:React.ChangeEvent<HTMLInputElement>) => {
         modify(event.target.value)
@@ -23,10 +24,11 @@ const TextField = ({label,modify,placeholder,value,required = false}:TextFieldPr
             </label>
 
             <input 
-            value={value} 
-            onChange={typing} 
-            required={required} 
-            placeholder={placeholder}/>
+                value={value} 
+                onChange={typing} 
+                required={required} 
+                placeholder={placeholder}
+                type={type}/>
         </div>
     )
 }

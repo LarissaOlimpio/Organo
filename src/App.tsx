@@ -1,3 +1,4 @@
+import Footer from 'componentes/Footer';
 import { useState } from 'react';
 import Banner from './componentes/Banner';
 import Form from './componentes/Form';
@@ -68,6 +69,8 @@ function App() {
         secondaryColor={time.secondaryColor} 
         collaborators={collaborators.filter(collaborator => collaborator.time === time.name)}
       />)}   
+
+      <Footer/>
 
     </div>
   );

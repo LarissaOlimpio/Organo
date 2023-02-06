@@ -37,8 +37,8 @@ const Formulario = ({registeredCollaborator,times}:FormProps) => {
   };
 
   return (
-    <section className={styles.form}>
-      <form onSubmit={toSave}>
+    <section className={styles.containerForm}>
+      <form className={styles.form} onSubmit={toSave}>
         <h2>Preencha os dados abaixo para criar o card do colaborador</h2>
         <TextField
           required={true}
@@ -77,7 +77,9 @@ const Formulario = ({registeredCollaborator,times}:FormProps) => {
         />
         <Button>Criar Card</Button>
       </form>
+      
     </section>
+   
   );
 };
 

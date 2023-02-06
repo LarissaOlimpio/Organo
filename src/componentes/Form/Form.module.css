@@ -1,10 +1,10 @@
-.form {
+.containerForm {
     display: flex;
     justify-content: center;
     margin: 80px 0;
 }
 
-.form form {
+.form {
     max-width: 80%;
     background-color: var(--backgroundForm);
     border-radius: 20px;

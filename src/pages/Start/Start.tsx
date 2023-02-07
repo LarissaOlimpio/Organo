@@ -1,11 +1,9 @@
-import Footer from 'componentes/Footer';
 import { useState } from 'react';
-import Banner from './componentes/Banner';
-import Form from './componentes/Form';
-import Time from './componentes/Time';
-import { ICollaborators } from './shared/interfaces/ICollaborators';
+import Form from '../../componentes/Form';
+import Time from '../../componentes/Time';
+import { ICollaborators } from '../../shared/interfaces/ICollaborators';
 
-function App() {
+function Start() {
 
   const times = [
     {
@@ -55,11 +53,6 @@ function App() {
   return (
     <div className="App">
 
-      <Banner 
-      srcImage="/assets/banner.png"
-      altText="Banner Image"
-      />
-
       <Form times={times.map(time => time.name)} registeredCollaborator={collaborator => newCollaboratorAdd(collaborator)}/>
 
       {times.map(time => <Time 
@@ -70,10 +63,8 @@ function App() {
         collaborators={collaborators.filter(collaborator => collaborator.time === time.name)}
       />)}   
 
-      <Footer/>
-
     </div>
   );
 }
 
-export default App;
+export default Start;

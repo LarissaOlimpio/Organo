@@ -75,7 +75,7 @@ const Formulario = ({registeredCollaborator,times}:FormProps) => {
           value={time}
           modify={(value) => setTime(value)}
         />
-        <Button>Criar Card</Button>
+        <Button >Criar Card</Button>
       </form>
       
     </section>

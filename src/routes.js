@@ -20,6 +20,7 @@ function AppRoutes(){
                     
                     <Route path="*"element={<NotFound/>} ></Route>
                     
+                    
                 </Route>
 
             </Routes>

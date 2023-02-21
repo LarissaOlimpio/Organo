@@ -1,4 +1,5 @@
 .collaborator {
+    position: relative;
     width: 280px;
 }
 
@@ -33,4 +34,9 @@
     line-height: 22px;
     color: var(--lightBlack);
     padding: 0 16px;
+}
+.delete{
+    position: absolute;
+    right: -10px;
+    top: -10px;
 }

@@ -4,6 +4,7 @@ import TextField from "../TextField";
 import DropdownList from "../DropdownList";
 import styles from "./Form.module.css";
 import { ICollaborators } from "shared/interfaces/ICollaborators";
+import {v4 as uuidv4} from 'uuid'
 
 interface FormProps{
   registeredCollaborator: (colaborator :ICollaborators) => void
@@ -26,7 +27,8 @@ const Formulario = ({registeredCollaborator,times}:FormProps) => {
       position,
       image,
       time,
-      date
+      date,
+      id : uuidv4()
     });
 
     setName("");

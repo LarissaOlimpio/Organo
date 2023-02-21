@@ -33,7 +33,7 @@ const Collaborator = ({ name,image,position,backgroundColor,date,whenDelete}:Col
                 <h5>{position}</h5>
                 <h5>{new Date(date).toLocaleDateString()}</h5>
                 
-                {/*toLocaleDateString analisa o idioma do navegador e forma a data conforme a localização */}]
+                {/*toLocaleDateString analisa o idioma do navegador e forma a data conforme a localização */}
 
     
             </div>

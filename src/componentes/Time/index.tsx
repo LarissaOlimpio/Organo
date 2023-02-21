@@ -2,7 +2,7 @@
 import { ICollaborators } from 'shared/interfaces/ICollaborators'
 import Collaborator from '../Collaborator'
 import styles from './Time.module.css'
-import {v4 as uuidv4} from 'uuid'
+
 
 interface TimeProps{
     
@@ -30,7 +30,7 @@ const Time = ({collaborators,primaryColor,secondaryColor,name,whenDelete }:TimeP
                     return <Collaborator 
                     backgroundColor={primaryColor} 
                      key={collaborator.id} 
-                     id={uuidv4()}
+                     id={collaborator.id}
                      name={collaborator.name} 
                      position={collaborator.position} 
                      image={collaborator.image}

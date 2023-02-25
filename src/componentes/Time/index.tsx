@@ -1,4 +1,3 @@
-
 import { ICollaborators } from 'shared/interfaces/ICollaborators'
 import Collaborator from '../Collaborator'
 import styles from './Time.module.css'
@@ -10,11 +9,9 @@ interface TimeProps{
     secondaryColor:string
     name: string
     collaborators: ICollaborators[]
-    whenDelete: any
   
-    
 }
-const Time = ({collaborators,primaryColor,secondaryColor,name,whenDelete }:TimeProps) => {
+const Time = ({collaborators,primaryColor,secondaryColor,name }:TimeProps) => {
     
     
     return (
@@ -35,7 +32,6 @@ const Time = ({collaborators,primaryColor,secondaryColor,name,whenDelete }:TimeP
                      position={collaborator.position} 
                      image={collaborator.image}
                      date={collaborator.date}
-                     whenDelete={whenDelete}
                     
                      />
                 }  )}

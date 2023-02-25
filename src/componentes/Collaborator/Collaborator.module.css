@@ -6,7 +6,7 @@
 .collaborator .header {
     border-radius: 10px 10px 0px 0px;
 }
-.collaborator img {
+.collaborator .imgColaborator {
     width: 100px;
     border-radius: 50%;
     position: relative;
@@ -35,8 +35,6 @@
     color: var(--lightBlack);
     padding: 0 16px;
 }
-.delete{
-    position: absolute;
-    right: -10px;
-    top: -10px;
+.favorite{
+    
 }

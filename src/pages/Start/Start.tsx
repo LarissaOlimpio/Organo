@@ -54,16 +54,13 @@ function Start() {
       secondaryColor: '#FFEEDF'
     }
   ])
-
   const [collaborators, setCollaborators] = useState<ICollaborators[]>([])
+  
 
-  const newCollaboratorAdd = (collaborator: ICollaborators) => {
+const newCollaboratorAdd = (collaborator: ICollaborators) => {
     setCollaborators([...collaborators, collaborator])
   }
 
-  function deleteCollaborator({id}:StartProps){
-    setCollaborators(collaborators.filter(collaborator => collaborator.id !== id));
-  }
 
   return (
     <div className="App">
@@ -76,8 +73,6 @@ function Start() {
         primaryColor={time.primaryColor} 
         secondaryColor={time.secondaryColor} 
         collaborators={collaborators.filter(collaborator => collaborator.time === time.name)}
-        //props delete estase referindo a função deleteCollaborator
-        whenDelete={deleteCollaborator}
       />
       )}   
 

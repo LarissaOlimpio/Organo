@@ -1,4 +1,5 @@
 import Button from "componentes/Button";
+import Title from "componentes/Title";
 import { useNavigate } from "react-router-dom"
 import styles from './NotFound.module.css'
 
@@ -9,7 +10,10 @@ function NotFound(){
 
             <span className={styles.span404}>404</span>
 
-            <h2 className={styles.title}>Ops!Página não encontrada</h2>
+            <Title>
+                Ops!Página não encontrada
+            </Title>
+           
 
             <div className={styles.divButton} onClick={() => navigate(-1)}>
                 <Button>

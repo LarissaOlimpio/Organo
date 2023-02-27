@@ -1,7 +1,6 @@
 .container {
     position: relative;
     text-align: center;
-    background-color: var(--azul-escuro);
     color: var(--branco);
     padding: 0 1.5rem 6.5rem;
 }
@@ -11,10 +10,4 @@
     font-size: 6rem;
     font-weight: 700;
     margin-bottom: 2rem;
-}
-.title{
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    font-weight: 400;
-    color: var(--lightBlack);
 }

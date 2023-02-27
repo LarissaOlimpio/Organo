@@ -1,4 +1,4 @@
-import FooterLink from 'componentes/FooterLink'
+import ExternalLink from 'componentes/ExternalLink'
 import styles from './Footer.module.css'
 
 
@@ -8,17 +8,17 @@ function Footer(){
         <footer className={styles.footer}>
             <section>
                 <nav className={styles.navLink}>
-                    <FooterLink
+                    <ExternalLink
                     link="https://www.instagram.com/aluraonline/"
                     img="assets/instagram.png"
                     description="Instagram icon"/>
 
-                    <FooterLink
+                    <ExternalLink
                     link="https://www.facebook.com/AluraCursosOnline/"
                     img="assets/facebook.png"
                     description="Facebook icon"/>
 
-                    <FooterLink
+                    <ExternalLink
                     link="https://twitter.com/aluraonline"
                     img="assets/twitter.png"
                     description="Twitter icon"/>
@@ -31,11 +31,11 @@ function Footer(){
 
             <section className={styles.developer}>
                 <p>
-                    <FooterLink
+                    <ExternalLink
                     link="https://www.alura.com.br/"
                     text="Desenvolvido por Alura"/>
                     &
-                    <FooterLink
+                    <ExternalLink
                     link="www.linkedin.com/in/larissaolimpio/"
                     text="Larissa Olimpio"/>
                 </p>

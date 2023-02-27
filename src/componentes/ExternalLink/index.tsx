@@ -1,16 +1,16 @@
-import styles from './Footer.module.css'
+import styles from './ExternalLink.module.css'
 
-interface FooterLinkProps{
+interface ExternalLinkProps{
     link: string
     img?: string
     description?:string
     text?: string
 }
-function FooterLink({link,img,description,text}:FooterLinkProps){
+function ExternalLink({link,img,description,text}:ExternalLinkProps){
     return(
       
         <a className={styles.link} href={link} target="_blank" rel="noreferrer"> <img src={img} alt={description} /> {text} </a>         
         
     )
 }
-export default FooterLink
+export default ExternalLink

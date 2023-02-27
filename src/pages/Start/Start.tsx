@@ -4,10 +4,6 @@ import Time from '../../componentes/Time';
 import { ICollaborators } from '../../shared/interfaces/ICollaborators';
 import{ v4 as uuidv4} from 'uuid';
 
-interface StartProps{
-  id: string
-}
-
 function Start() {
 
   const [times, setTimes] = useState([

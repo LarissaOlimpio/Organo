@@ -18,6 +18,8 @@ const Formulario = ({registeredCollaborator,times}:FormProps) => {
   const [image, setImage] = useState("");
   const [time, setTime] = useState("");
   const [date, setDate] = useState("");
+  const [nameTime, setNameTime] = useState("");
+  const [colorNewTime, setColorNewTime] = useState("");
 
   const toSave = (event:React.FormEvent<HTMLFormElement>) => {
 
@@ -40,17 +42,18 @@ const Formulario = ({registeredCollaborator,times}:FormProps) => {
 
   return (
     <section className={styles.containerForm}>
+     
       <form className={styles.form} onSubmit={toSave}>
         <h2>Preencha os dados abaixo para criar o card do colaborador</h2>
         <TextField
-          required={true}
+          required
           label="Nome"
           placeholder="Digite seu nome"
           value={name}
           modify={(value) => setName(value)}
         />
         <TextField
-          required={true}
+          required
           label="Cargo"
           placeholder="Digite seu cargo"
           value={position}
@@ -71,14 +74,16 @@ const Formulario = ({registeredCollaborator,times}:FormProps) => {
           />
 
         <DropdownList
-          required={true}
+          required
           label="Time"
           itens={times}
           value={time}
           modify={(value) => setTime(value)}
         />
         <Button >Criar Card</Button>
+
       </form>
+
       
     </section>
    

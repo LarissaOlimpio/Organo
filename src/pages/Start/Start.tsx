@@ -61,7 +61,9 @@ const newCollaboratorAdd = (collaborator: ICollaborators) => {
   return (
     <div className="App">
 
-      <Form times={times.map(time => time.name)} registeredCollaborator={collaborator => newCollaboratorAdd(collaborator)}/>
+      <Form 
+        times={times.map(time => time.name)} 
+        registeredCollaborator={collaborator => newCollaboratorAdd(collaborator)}/>
 
       {times.map(time => <Time 
         key={time.id} 

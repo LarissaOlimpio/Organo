@@ -2,4 +2,7 @@
     text-decoration: none;
     color: var(--write);
 }
+.link:hover {
+    color: var(--hover);
+}
 

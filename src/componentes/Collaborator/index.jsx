@@ -4,17 +4,6 @@ import iconFavorite from './iconFavorite.png'
 import iconNotfavor from './iconNotfavor.png'
 
 
-/*interface CollaboratorProps{
-    name:string 
-    image: string 
-    position: string
-    backgroundColor:string
-    date :string
-    id:string
-   
-
-}*/
-//const Collaborator = ({ name,image,position,backgroundColor,date,id}:CollaboratorProps)
 const Collaborator = ({ name,image,position,backgroundColor,date,id}) => {
 
     const {favorite, addFavorite} = useFavoriteContext();

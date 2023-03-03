@@ -6,7 +6,7 @@ import{ v4 as uuidv4} from 'uuid';
 
 function Start() {
 
-  const [times, setTimes] = useState([
+  const [times] = useState([
     {
       id: uuidv4(),
       name: 'Programação',

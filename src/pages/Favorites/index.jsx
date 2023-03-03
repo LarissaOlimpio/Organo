@@ -15,9 +15,9 @@ function Favorites(){
             </div>
             <section className={styles.container}>
                
-                {favorite.map((fav)=>{
-                    return <Collaborator {...fav} key={fav.id}/>
-                })}
+                    {favorite.map((fav)=>{
+                        return <Collaborator {...fav} key={fav.id}/>
+                    })}
             </section>
         </>
     )

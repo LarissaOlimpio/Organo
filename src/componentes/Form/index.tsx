@@ -9,7 +9,9 @@ import {v4 as uuidv4} from 'uuid'
 interface FormProps{
   registeredCollaborator: (colaborator :ICollaborators) => void
   times: string[]
+
 }
+
 
 const Formulario = ({registeredCollaborator,times}:FormProps) => {
 
@@ -18,8 +20,8 @@ const Formulario = ({registeredCollaborator,times}:FormProps) => {
   const [image, setImage] = useState("");
   const [time, setTime] = useState("");
   const [date, setDate] = useState("");
-  const [nameTime, setNameTime] = useState("");
-  const [colorNewTime, setColorNewTime] = useState("");
+ 
+  
 
   const toSave = (event:React.FormEvent<HTMLFormElement>) => {
 
@@ -38,6 +40,20 @@ const Formulario = ({registeredCollaborator,times}:FormProps) => {
     setImage("");
     setTime("");
     setDate("")
+
+    const itens =[]
+
+    const itemAtual = {
+      "name": name,
+      "position":position,
+      "image":image,
+      "time":time,
+      "date":date,
+    
+    }
+    itens.push(itemAtual)
+    localStorage.setItem("itens",JSON.stringify(itens))
+    
   };
 
   return (

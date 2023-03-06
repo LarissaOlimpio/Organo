@@ -1,11 +1,22 @@
 .footer {
     background: var(--lilac);
     color: var(--write);
-    padding: 80px;
+    padding: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     
 }
-
+.developer{
+    width: 200px;
+}
+@media screen and (min-width:768px){
+    .footer{
+        flex-direction: row;
+    }
+    .developer{
+        width: auto;
+    }
+}
 

@@ -1,6 +1,10 @@
 .collaborator {
     position: relative;
     width: 280px;
+    word-wrap: break-word;
+    text-align: center;
+    padding-bottom: 2rem;
+  
 }
 
 .collaborator .header {
@@ -19,6 +23,7 @@
     border-radius: 0px 0px 10px 10px;
     padding-top: 90px;
     padding-bottom: 40px;
+   
 }
 
 .collaborator .footer h4 {
@@ -27,6 +32,7 @@
     line-height: 22px;
     font-weight: bold;
     margin-bottom: 8px;
+    
 }
 
 .collaborator .footer h5 {

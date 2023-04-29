@@ -4,6 +4,7 @@
 
 Este projeto foi criado a partir do curso da Alura - React: Desenvolvendo com JavaScript junto com o curso React: Migrando para TypeScript, onde foi utilizado como base o projeto até então criado no primeiro curso porém agora dando meus primeiros passos no meu aprendizado em TypeScript.
 Além disso, criei funcionalidades a mais do que orientadas pelos instrutores Paulo Silveira e Vinícius Neves, como por exemplo, página de favoritos, utilizando o conceito de contexto por meio do createContext e useContext, além de página de não encontrado, caso ocorra um erro 404. Utilizando em ambos, rotas com React-Router-Dom.
+O objetivo desse projeto é permitir ao usuário cadastrar colaboradores de sua preferência e gerar os cards na tela após o preenchimento dos dados do formulário, permitindo adicionar nome, cargo, imagem e data de entrada no time, estes times são pré definidos em uma lista suspensa, com opções como: Programação, FrontEnd, DataScrience, Devops,UX e Design, Mobile e inovação e Gestão. Dessa forma, após gerado os card, o usuário pode também favoritar o seu colaborador favorito, e visualizar estes na página de favoritos.
 
 > Em desemvolvimento, refatoração utilizando typescript
 
